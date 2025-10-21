@@ -16,7 +16,7 @@ import co.edu.uptc.catalogo.dto.FoodItemDTO;
 import co.edu.uptc.catalogo.service.FoodItemService;
 
 @RestController
-@RequestMapping("/foodcatalogue") // Ruta base para este controlador
+@RequestMapping("/foodcatalogue")
 public class FoodItemController {
 
     @Autowired
@@ -28,7 +28,7 @@ public class FoodItemController {
         return new ResponseEntity<>(itemAdded, HttpStatus.CREATED);
     }
 
-    // ESTE ES EL ENDPOINT CLAVE PARA LA INTEGRACIÓN
+
     @GetMapping("/restaurant/{restaurantId}")
     public ResponseEntity<List<FoodItemDTO>> getFoodItemsByRestaurantId(
             @PathVariable Long restaurantId) {

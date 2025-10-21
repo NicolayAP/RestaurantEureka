@@ -3,9 +3,8 @@ server:
 
 spring:
   application:
-    name: CATALOGUE-SERVICE  # Nombre para registrar en Eureka
+    name: CATALOGUE-SERVICE  
 
-  # Configuración para la base de datos (usando H2 en memoria como en mi ejemplo)
   datasource:
     url: jdbc:h2:mem:foodcatalogue-db
     driverClassName: org.h2.Driver
@@ -15,12 +14,10 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
   
-  # Habilita la consola de H2 para pruebas
   h2:
     console:
       enabled: true
 
-# Configuración del cliente de Eureka (igual a tu servicio 'order')
 eureka:
   client:
     service-url:
