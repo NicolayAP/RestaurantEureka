@@ -1,4 +1,4 @@
-package co.edu.uptc.restaurante.order.entity;
+package co.edu.uptc.catalogo.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
