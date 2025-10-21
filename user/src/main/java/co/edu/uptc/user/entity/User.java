@@ -1,4 +1,4 @@
-package co.edu.uptc.restaurante.order.entity;
+package co.edu.uptc.user.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
