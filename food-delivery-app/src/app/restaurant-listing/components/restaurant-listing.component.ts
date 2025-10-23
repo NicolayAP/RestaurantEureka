@@ -20,8 +20,7 @@ export class RestaurantListingComponent {
   constructor(private router: Router, private restaurantService: RestaurantService) {}
 
   getAllRestaurants(){ 
-    this.restaurantService.getAllRestaurants().subscribe(
-      data => {
+    this.restaurantService.getAllRestaurants().subscribe(data => {
       this.restaurantList = data;
       this.restaurantList.forEach(restaurant => {
         this.ramdonImageUrl.push('assets/restaurant-pics/' + this.getRadomImage());

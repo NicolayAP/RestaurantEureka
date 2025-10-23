@@ -11,7 +11,7 @@ export class RestaurantService {
   private apiUrl = API_URL_RL+"/restaurants/fetchAllRestaurants";
   constructor(private http: HttpClient) {}
 
-  getRestaurants(): Observable<any> {
+  getAllRestaurants(): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}`).pipe(
       catchError(this.handleError)
     );
