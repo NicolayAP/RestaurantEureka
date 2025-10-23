@@ -6,8 +6,7 @@ spring:
     name: ORDER-SERVICE
   data:
     mongodb:
-      uri: mongodb+srv://Restaurante:restaurante123@cluster0.pyjmrpz.mongodb.net/orderdb?retryWrites=true&w=majority
-
+      uri: mongodb+srv://Restaurante:restaurante123@cluster0.kss8c1e.mongodb.net/orderdb?retryWrites=true&w=majority
 eureka:
   client:
     service-url:
