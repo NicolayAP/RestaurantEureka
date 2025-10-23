@@ -5,7 +5,6 @@ import { HeaderRoutingModule } from './header-routing.module';
 import { HeaderComponent } from './components/header.component';
 
 
-
 @NgModule({
   declarations: [
     HeaderComponent
@@ -14,8 +13,6 @@ import { HeaderComponent } from './components/header.component';
     CommonModule,
     HeaderRoutingModule
   ],
-  exports: [
-    HeaderComponent
-  ]
+  exports:[HeaderComponent]
 })
 export class HeaderModule { }

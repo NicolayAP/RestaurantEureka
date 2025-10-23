@@ -1,18 +1,17 @@
 .user-avatar {
     display: flex;
     align-items: center;
-}
-
-.user-avatar img {
-    border-radius: 50%;
+  }
+  
+  .user-avatar img {
     width: 40px;
     height: 40px;
-    margin-right: 10px;
+    border-radius: 50%;
     object-fit: cover;
-}
-
-.username {
-    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .username {
     font-size: 14px;
-}
-
+    font-weight: bold;
+  }

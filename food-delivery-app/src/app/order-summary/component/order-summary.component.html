@@ -1,0 +1,36 @@
+<div class="order-summary">
+    <h1>Resumen Pedido</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of obj.foodItemsList">
+          <td>{{ item.itemName }}</td>
+          <td>{{ item.quantity }}</td>
+          <td>&#36; {{ item.price }}</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>&#36; {{ total }}</td>
+        </tr>
+      </tfoot>
+    </table>
+    <button class="checkout-button" (click)="saveOrder()">Realizar Pedido</button>
+  </div>
+  
+  
+  <div class="dialog-container" *ngIf="showDialog">
+    <div class="dialog-box">
+      <h2>¡Pedido realizado!</h2>
+      <p>Su pedido se ha realizado con éxito.</p>
+      <button class="close-button" (click)="closeDialog()">Cerrar</button>
+    </div>
+  </div>
+  
