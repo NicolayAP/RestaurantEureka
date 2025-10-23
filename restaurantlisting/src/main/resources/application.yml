@@ -10,7 +10,7 @@ spring:
     application:
         name: RESTAURANTE-SERVICE
     datasource:
-        url: jdbc:mysql://localhost:3306/restaurantdb
+        url: jdbc:mysql://localhost:3306/principal_restaurante
         password: jeol_pass
         username: jeol_user
         driver-class-name: com.mysql.cj.jdbc.Driver

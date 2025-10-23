@@ -19,10 +19,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long userId;
-    private String username;
+    private String userName;
     private String userPassword;
-    private String adress;
+    private String address;
     private String city;
-
-
 }

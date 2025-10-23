@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
-public class RestauranteApplication {
+public class OrderServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestauranteApplication.class, args);
+		SpringApplication.run(OrderServiceApplication.class, args);
 	}
 
 	@Bean

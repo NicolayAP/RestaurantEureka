@@ -6,7 +6,7 @@ spring:
     name: USER-SERVICE
 
   datasource:
-    url: jdbc:mysql://localhost:3306/userdb?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/user_restaurante?useSSL=false&serverTimezone=UTC
     username: jeol_user
     password: jeol_pass
     driver-class-name: com.mysql.cj.jdbc.Driver
