@@ -32,4 +32,10 @@ public class FoodItemService {
         
         return FoodItemMapper.INSTANCE.toFoodItemDTO(savedFoodItem);
     }
+
+    public FoodItemDTO fetchFoodItemById(Long id) {
+    FoodItem foodItem = foodItemRepo.findById(id)
+        .orElseThrow(() -> new RuntimeException("Food item not found with ID: " + id));
+    return FoodItemMapper.INSTANCE.toFoodItemDTO(foodItem);
+}
 }

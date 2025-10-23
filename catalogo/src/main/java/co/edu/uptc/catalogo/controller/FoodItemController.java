@@ -36,4 +36,11 @@ public class FoodItemController {
         List<FoodItemDTO> foodItems = foodItemService.findFoodItemsByRestaurant(restaurantId);
         return new ResponseEntity<>(foodItems, HttpStatus.OK);
     }
+
+    @GetMapping("/fetchFoodItemById/{id}")
+    public ResponseEntity<FoodItemDTO> fetchFoodItemById(@PathVariable Long id) {
+        FoodItemDTO foodItem = foodItemService.fetchFoodItemById(id);
+    return new ResponseEntity<>(foodItem, HttpStatus.OK);
+    }
+
 }
